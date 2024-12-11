@@ -16,13 +16,13 @@ internal class Book
         }
         set
         {
-            bool bIsEmpty = String.IsNullOrEmpty(value);
-            while (bIsEmpty == true)
+            var IsEmpty = string.IsNullOrEmpty(value);
+            while (IsEmpty == true)
             {
                 Console.WriteLine("Введены неверные данные.");
                 Console.WriteLine("Введите название добавляемой книги:");
                 value = Console.ReadLine();
-                bIsEmpty = String.IsNullOrEmpty(value);
+                IsEmpty = string.IsNullOrEmpty(value);
             }
             _title = value;
         }
@@ -36,13 +36,13 @@ internal class Book
         }
         set
         {
-            bool bIsEmpty = String.IsNullOrEmpty(value);
-            while (bIsEmpty == true)
+            var IsEmpty = string.IsNullOrEmpty(value);
+            while (IsEmpty == true)
             {
                 Console.WriteLine("Введены неверные данные.");
                 Console.WriteLine("Введите автора добавляемой книги:");
                 value = Console.ReadLine();
-                bIsEmpty = String.IsNullOrEmpty(value);
+                IsEmpty = string.IsNullOrEmpty(value);
             }
             _author = value;
         }
